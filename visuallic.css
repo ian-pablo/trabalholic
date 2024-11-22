@@ -1,0 +1,164 @@
+header, main, iframe, footer {
+    width: 100%;
+}
+
+header {
+    height: 70px;
+    background-color: aqua;
+    display: flex;
+    background-color: #006400;
+}
+
+.logo {
+    flex: 30%;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+
+.logo img {
+    width: 140px;
+    margin-left: 40px;
+}
+
+.botaomenu {
+    flex: 30%;
+}
+
+nav {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 40%;
+    justify-content: center;
+}
+
+nav p {
+    margin: auto;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #Cd7f32;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+main, iframe {
+    height: calc(var(--height) * 2 + 15px); /*Se quiser alterar Ian, não sei como vai ficar no final*/
+    border: none;
+}
+
+footer, .marco0 {
+    height: 400px;
+    display: flex;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #006400;
+    justify-content: center;
+}
+
+.marco0 {
+    width: 1100px;
+    flex-direction: row;
+}
+
+.marco0 div {
+    flex: 50%;
+    flex-direction: column;
+    margin: 0px 30px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.marco0 div p {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        box-sizing: border-box;
+        padding: 0px 10px;
+    }
+    .logo {
+        flex: 50%;
+        margin: -20px;
+    }
+
+    .botaomenu {
+        flex: 50%;
+        justify-content: right;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .botaomenu i{
+        display: block !important;
+        font-size: 50px;
+    }
+    
+    nav {
+        display: none;
+        flex: 0%;
+    }
+
+    .nav-mobile {
+        z-index: 3;
+        width: 70%;
+        height: 100%;
+        right: 0%;
+        top: 0%;
+        flex-direction: column;
+        position: absolute;
+        background-color: #006400;
+        display: none;
+    }
+
+    .nav-mobile div {
+        margin: 20px 10px;
+        font-size: 25px;
+    }
+
+    .x {
+        display: flex;
+        justify-content: right;
+    }
+
+    .topico {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .topico a {
+        text-decoration: none;
+        color: #Cd7f32;
+    }
+
+    .topico:hover {
+        background-color: #1D931D;
+    }
+
+    .topico:hover a {
+        color: black;
+    }
+
+    footer, .marco0 {
+        height: 1000px;
+    }
+
+    .marco0 {
+        flex-direction: column;
+    }
+}

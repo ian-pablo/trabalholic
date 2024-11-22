@@ -1,0 +1,46 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    height: 100%;
+}
+
+.sub-body {
+    margin-top: 30px;
+    width: 100%;
+    height: var(--height);
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.praceta img{
+    width: 674px;
+    height: 358px;
+    margin-top: 10px;
+}
+
+.predios img {
+    width: 480px;
+    height: 320px;
+    margin: 20px 0px;
+}
+
+.sub-body h1 {
+    margin: 10px 0px;
+}
+
+.sub-body p {
+    margin: 10px 0px;
+    width: 50%;
+    min-width: 70vw;
+}
+
+img{
+    max-width: 93vw;
+    object-fit: cover;
+}
