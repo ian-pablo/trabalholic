@@ -14,20 +14,20 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    /* padding: 20px; */
     box-sizing: border-box;
 }
 
 .praceta img{
     width: 674px;
     height: 358px;
-    margin-top: 10px;
+    margin-top: 10px 0;
 }
 
 .predios img {
     width: 480px;
     height: 320px;
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
 .sub-body h1 {
@@ -43,4 +43,19 @@ body {
 img{
     max-width: 93vw;
     object-fit: cover;
+}
+
+@media screen and (max-width: 300px) {
+    img{
+        height: 200px !important;
+        margin: 0px;
+    }
+
+    .sub-body {
+        padding: 0px;
+    }
+
+    .sub-body h1 {
+        text-align: center;
+    }
 }
